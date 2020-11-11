@@ -1,19 +1,26 @@
-# Spaced Repetition Capstone
+# Learn Funny French Phrases (Client)
 
-## Setup
+this application can be used to learn funny french phrases with spaced repitition.
 
-To setup the application
 
-1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application *Cypress.io* for running browser integration tests
+## Tech Stack
+* React
+* Node.js
+* PostgreSQL
 
-The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
+## How to Run
 
-Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-repetition-api.
+Git Clone this and the Learn Funny French Phrase server from github,
+npm install both,
+run the server and run the client.
+(To run locally use localhost link with server!) 
 
-## Running project
 
-This is a `create-react-app` project so `npm start` will start the project in development mode with hot reloading by default.
+## Links
+* [Client Repo]()
+* [Server / API repo]()
+* [Live Link]()
+
 
 ## Running the tests
 
@@ -45,3 +52,7 @@ npm run cypress:run
 ```
 
 This will save video recordings of the test runs in the directory `./cypress/videos/`.
+
+## Contributor
+
+Mark Marcello

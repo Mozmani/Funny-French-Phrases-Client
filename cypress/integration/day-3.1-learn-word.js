@@ -32,7 +32,7 @@ describe(`User story: Presented with word`, function() {
       .then(languageHeadFixture => {
         cy.get('main').within($main => {
           cy.get('h2')
-            .should('have.text', 'Translate the word:')
+            .should('have.text', 'Translate the phrase:')
             .siblings('span')
             .should('have.text', languageHeadFixture.nextWord)
         })
@@ -51,7 +51,7 @@ describe(`User story: Presented with word`, function() {
 
     cy.get('main form').within($form => {
       cy.get('label[for=learn-guess-input]')
-        .should('have.text', `What's the translation for this word?`)
+        .should('have.text', `What's the translation for this phrase?`)
 
       cy.get('input#learn-guess-input')
         .should('have.attr', 'type', 'text')

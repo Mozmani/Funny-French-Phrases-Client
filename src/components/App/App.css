@@ -27,13 +27,7 @@ input{
   background-color: #615C99;
 }
 
-Button{
-  display:flex;
-  margin-bottom: 5px;
-  border-radius: 20px;
-  background-color: black;
-  color:whitesmoke;
-}
+
 
 Button:hover{
   background-color: grey;
@@ -41,7 +35,7 @@ Button:hover{
 
 a{
   text-decoration: none;
-  color:#ffecdb;
+  color:#DAD2D8;
 }
 
 a:hover {
@@ -68,7 +62,25 @@ h1{
   margin:0px;
 }
 
-h2, p {
+h2, p, h3, main a, h4, span, div.results {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+main.DisplayFeedback{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+Button{
+  display:flex;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  background-color: black;
+  color:whitesmoke;
+}
+ul{
+  list-style: none;
 }
