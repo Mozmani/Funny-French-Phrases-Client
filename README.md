@@ -1,6 +1,6 @@
 # Learn Funny French Phrases (Client)
 
-this application can be used to learn funny french phrases with spaced repitition.
+this application can be used to learn funny french phrases with spaced repetition.
 
 
 ## Tech Stack
@@ -17,8 +17,8 @@ run the server and run the client.
 
 
 ## Links
-* [Client Repo]()
-* [Server / API repo]()
+* [Client Repo](https://github.com/Mark-The-Dev/Funny-French-Phrases-Client)
+* [Server / API repo](https://github.com/Mark-The-Dev/Learn-Funny-French-Phrases-Server)
 * [Live Link]()
 
 
