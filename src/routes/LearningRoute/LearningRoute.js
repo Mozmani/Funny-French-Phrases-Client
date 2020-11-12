@@ -103,7 +103,6 @@ class LearningRoute extends Component {
   //sends a request to /guess route
   postGuess = (guess) => {
     let theGuess = JSON.stringify({ guess });
-    console.log(theGuess);
     return fetch(`${config.REACT_APP_API_BASE}/language/guess`, {
       method: "POST",
       headers: {
