@@ -14,7 +14,7 @@ class LearningRoute extends Component {
 
   //function to grab the head route only once.
   grabHead = () => {
-    return fetch(`${config.API_ENDPOINT}/language/head`, {
+    return fetch(`${config.REACT_APP_API_BASE}/language/head`, {
       headers: {
         authorization: `bearer ${TokenService.getAuthToken()}`,
       },
@@ -104,7 +104,7 @@ class LearningRoute extends Component {
   postGuess = (guess) => {
     let theGuess = JSON.stringify({ guess });
     console.log(theGuess);
-    return fetch(`${config.API_ENDPOINT}/language/guess`, {
+    return fetch(`${config.REACT_APP_API_BASE}/language/guess`, {
       method: "POST",
       headers: {
         authorization: `bearer ${TokenService.getAuthToken()}`,
