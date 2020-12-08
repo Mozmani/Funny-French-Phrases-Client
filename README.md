@@ -2,12 +2,12 @@
 
 this application can be used to learn funny french phrases with spaced repetition.
 
-
 ## Tech Stack
 * React
 * Node.js
 * PostgreSQL
 
+![dev-view](https://github.com/Mark-The-Dev/Funny-French-Phrases-Client/blob/master/public/LFF.png?raw=true)
 ## How to Run
 
 Git Clone this and the Learn Funny French Phrase server from github,
