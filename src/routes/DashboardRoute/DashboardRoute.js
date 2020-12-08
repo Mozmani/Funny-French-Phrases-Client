@@ -51,7 +51,7 @@ class DashboardRoute extends Component {
     let score = this.state.language.total_score;
 
     return (
-      <section>
+      <section className='dashboard'>
         <h2>{`Your Language: ${language}`}</h2>
         <p>{`Total correct answers: ${score}`}</p>
         <main>

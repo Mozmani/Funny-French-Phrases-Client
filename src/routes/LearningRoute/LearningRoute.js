@@ -60,7 +60,7 @@ class LearningRoute extends Component {
             <div className='results'>
             {`You have answered this word incorrectly ${data.wordIncorrectCount} times.`}
             </div>
-            <form
+            <form 
               onSubmit={(e) => {
                 this.handleGuess(e);
               }}
@@ -87,7 +87,7 @@ class LearningRoute extends Component {
         <>
           
           <main>
-            <form
+            <form className='response'
               onSubmit={(e) => {
                 this.grabDisplay(e);
               }}
@@ -135,7 +135,7 @@ class LearningRoute extends Component {
   //event listener for submitting the guess
   handleGuess = (e) => {
     e.preventDefault();
-    let guess = this.state.currGuess;
+    let guess = this.state.currGuess.toLowerCase();
     let resp = this.state.resp;
     this.postGuess(guess).then(() => {
       if (guess !== resp.answer) {
@@ -186,7 +186,7 @@ class LearningRoute extends Component {
   }
   // sets head state to response of guess in compliance with cypress testing.
   grabDisplay =(e) =>{
-    this.state.displayQ = false
+    this.setState({displayQ: false})
     this.setState({
       head:this.state.resp
     })
@@ -194,7 +194,7 @@ class LearningRoute extends Component {
   }
 
   render() {
-
+    
     return <section>{this.displayQs()}</section>;
   }
 }

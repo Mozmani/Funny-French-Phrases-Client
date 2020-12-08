@@ -3,6 +3,10 @@ body{
   color:#ffecdb;
 }
 
+html * {
+  font-family: 'GFS Didot', serif;
+}
+
 
 form {
   border: 2px solid black;
@@ -30,7 +34,8 @@ input{
 
 
 Button:hover{
-  background-color: grey;
+  background-color: black;
+  color:#ffecdb;
 }
 
 a{
@@ -78,11 +83,12 @@ Button{
   display:flex;
   margin-bottom: 5px;
   border-radius: 20px;
-  background-color: black;
-  color:whitesmoke;
+  background-color: #615C99 ;
+  color:#ffecdb;
 }
 ul{
   list-style: none;
+  padding: 0px;
 }
 
 .homepage {
@@ -91,3 +97,41 @@ ul{
   padding: 10%;
   border-radius: 25px;
 }
+
+li {
+  border: 2px solid #ffecdb;
+  margin: 0 10%;
+  border-radius: 50%;
+  padding-bottom: 5%;
+}
+
+.dashboard a {
+  border: 2px solid #ffecdb;
+  margin: 0 25%;
+  padding: 3%;
+  border-radius: 25px;
+
+}
+
+.dashboard a:hover {
+  color: hsl(254, 21%, 56%);
+  background-color: #ffecdb;
+}
+
+.results {
+  margin: 2% 0;
+}
+
+form label {
+  margin: 20px 0;
+}
+
+form input {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.response {
+  margin-top:10%;
+}
+
