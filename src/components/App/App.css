@@ -84,3 +84,10 @@ Button{
 ul{
   list-style: none;
 }
+
+.homepage {
+  border: 2px solid #ffecdb;
+  margin: 10% 10%;
+  padding: 10%;
+  border-radius: 25px;
+}

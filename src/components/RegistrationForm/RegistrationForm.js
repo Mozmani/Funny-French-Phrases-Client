@@ -3,35 +3,43 @@ import { Link } from 'react-router-dom'
 import { Input, Required, Label } from '../Form/Form'
 import AuthApiService from '../../services/auth-api-service'
 import Button from '../Button/Button'
+import UserContext from '../../contexts/UserContext'
 import './RegistrationForm.css'
 
 class RegistrationForm extends Component {
   static defaultProps = {
     onRegistrationSuccess: () => { }
   }
+  static contextType = UserContext
 
   state = { error: null }
 
   firstInput = React.createRef()
 
-  handleSubmit = ev => {
+  handleSubmit = async ev => {
     ev.preventDefault()
     const { name, username, password } = ev.target
     
-    AuthApiService.postUser({
+    const res = await AuthApiService.postUser({
       name: name.value,
       username: username.value,
       password: password.value,
     })
-      .then(user => {
-        name.value = ''
-        username.value = ''
-        password.value = ''
-        this.props.onRegistrationSuccess()
-      })
-      .catch(res => {
-        this.setState({ error: res.error })
-      })
+
+  
+    if (res.error){
+      this.setState({error: res.error})
+    }
+
+   const resLog = await AuthApiService.postLogin({
+      username: username.value,
+      password: password.value,
+    })
+    
+    this.context.processLogin(resLog.authToken)
+
+    this.props.onRegistrationSuccess()
+
   }
 
   componentDidMount() {

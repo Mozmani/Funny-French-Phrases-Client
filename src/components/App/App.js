@@ -8,6 +8,7 @@ import LoginRoute from '../../routes/LoginRoute/LoginRoute'
 import DashboardRoute from '../../routes/DashboardRoute/DashboardRoute'
 import LearningRoute from '../../routes/LearningRoute/LearningRoute'
 import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
+import HomePage from '../../HomePage/HomePage'
 import './App.css'
 
 export default class App extends Component {
@@ -28,9 +29,15 @@ export default class App extends Component {
             <p>There was an error! Oh no!</p>
           )}
           <Switch>
+            <Route
+            exact path ='/'
+            component={HomePage}
+            >
+
+            </Route>
             <PrivateRoute
               exact
-              path={'/'}
+              path={'/dashboard'}
               component={DashboardRoute}
             />
             <PrivateRoute
