@@ -43,6 +43,12 @@ class LoginForm extends Component {
   render() {
     const { error } = this.state
     return (
+      <>
+      <div className='testUser'>
+        <span>Test User Login:</span>
+        <span>User Name: admin</span>
+        <span>Password: pass</span>
+      </div>
       <form
         className='LoginForm'
         onSubmit={this.handleSubmit}
@@ -76,6 +82,7 @@ class LoginForm extends Component {
           Login
         </Button>
       </form>
+      </>
     )
   }
 }

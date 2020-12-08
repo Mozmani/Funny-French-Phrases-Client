@@ -16,6 +16,8 @@ const HomePage = () => {
           some funny french expressions!
         </p>
         <Link to='/dashboard'> Lets get started!</Link>
+        <p>Or</p>
+        <Link to='/login'> Log in with a test user!</Link>
     </div>
   )
 }

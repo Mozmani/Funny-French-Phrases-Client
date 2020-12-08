@@ -14,7 +14,7 @@ form {
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   margin: 0px 15%; 
   background-color: #9B88AA;
 }
@@ -85,6 +85,7 @@ Button{
   border-radius: 20px;
   background-color: #615C99 ;
   color:#ffecdb;
+  font-size: 18px;
 }
 ul{
   list-style: none;
@@ -135,3 +136,9 @@ form input {
   margin-top:10%;
 }
 
+.testUser {
+  border: 2px solid #ffecdb;
+  margin: 2% 15%;
+  border-radius: 30px;
+  padding: 20px;
+}
